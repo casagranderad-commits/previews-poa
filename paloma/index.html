@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Paloma Bernardes</title>
+<meta property="og:title" content="Paloma Bernardes">
+<meta property="og:description" content="Advocacia previdenciária no Passo d'Areia. O tempo do benefício pede clareza, e o escritório está em Porto Alegre.">
+<meta property="og:image" content="hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,560&family=Outfit:wght@300;500&display=swap" rel="stylesheet">
+<style>
+:root { --ink:#f4efe6; --muted:rgba(244,239,230,.72); --line:rgba(244,239,230,.22); --accent:#c9864f; --bg:#14110e; --serif:"Fraunces",serif; --sans:"Outfit",sans-serif; }
+[data-theme="jussara"]{ --ink:#f3efe6; --muted:rgba(243,239,230,.7); --accent:#d7c39a; --bg:#0c121c; }
+[data-theme="eny"]{ --ink:#1a140e; --muted:#6d624f; --line:rgba(26,20,14,.16); --accent:#1f6b45; --bg:#f3efe6; }
+[data-theme="michelle"]{ --ink:#241c16; --muted:#6e6256; --line:rgba(36,28,22,.16); --accent:#8a5a32; --bg:#f6f1e8; }
+[data-theme="dilto"]{ --ink:#f2efe8; --muted:rgba(242,239,232,.7); --accent:#e0a15a; --bg:#0c0e12; }
+[data-theme="raquel"]{ --ink:#17241e; --muted:#5d6c64; --line:rgba(23,36,30,.14); --accent:#2d6a52; --bg:#f7f4ee; }
+[data-theme="taiana"]{ --ink:#f6f1ea; --muted:rgba(246,241,234,.74); --accent:#e7d3c4; --bg:#2a211c; }
+[data-theme="bergmann"]{ --ink:#111; --muted:#5c5c5c; --line:rgba(0,0,0,.12); --accent:#111; --bg:#f4f4f2; }
+[data-theme="vs"]{ --ink:#f6f3ec; --muted:rgba(246,243,236,.74); --accent:#e6d3b0; --bg:#121820; }
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans)}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit}
+.hero{position:relative;min-height:100svh;display:grid;align-items:end;overflow:hidden}
+.media{position:absolute;inset:0}
+.media img{animation:ken 26s ease-in-out infinite alternate;transform-origin:55% 40%}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(0,0,0,.18) 40%,rgba(0,0,0,.78) 100%)}
+.sheen{position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.16) 48%,transparent 60%);transform:translateX(-130%);animation:sheen 8.5s ease-in-out 1.2s infinite}
+.hero-copy{position:relative;z-index:2;padding:28px 22px 36px}
+.eyebrow{margin:0 0 14px;letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--muted)}
+h1{margin:0;font-family:var(--serif);font-weight:500;font-size:clamp(58px,14vw,108px);line-height:.88;letter-spacing:-.045em}
+.rule{display:block;height:1px;width:0;margin:18px 0;background:var(--accent);animation:draw 1.1s ease .35s forwards}
+.lede{max-width:36rem;margin:0;font-size:18px;line-height:1.45}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 20px;border-radius:999px;text-decoration:none;background:var(--accent);color:#1a120c;font-size:15px}
+.btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35)}
+.sheet{padding:28px 22px 48px}
+.grid{display:grid;gap:22px}
+.label{display:block;margin-bottom:6px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.phone{font-family:var(--serif);font-size:clamp(32px,6vw,46px);letter-spacing:-.04em;text-decoration:none}
+.areas{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0;padding:0;list-style:none}
+.areas li{border:1px solid var(--line);border-radius:999px;padding:8px 12px;font-size:13px}
+footer{padding:0 22px 28px;color:var(--muted);font-size:12px;line-height:1.5}
+.rise{animation:rise .9s ease both}
+.d2{animation-delay:.12s}.d3{animation-delay:.24s}.d4{animation-delay:.4s}
+body[data-theme="eny"] .hero,body[data-theme="michelle"] .hero,body[data-theme="raquel"] .hero,body[data-theme="bergmann"] .hero{min-height:auto;display:block}
+body[data-theme="eny"] .media,body[data-theme="michelle"] .media,body[data-theme="raquel"] .media,body[data-theme="bergmann"] .media{position:relative;height:64svh}
+body[data-theme="eny"] .shade,body[data-theme="michelle"] .shade,body[data-theme="raquel"] .shade,body[data-theme="bergmann"] .shade,body[data-theme="eny"] .sheen,body[data-theme="michelle"] .sheen,body[data-theme="raquel"] .sheen,body[data-theme="bergmann"] .sheen{display:none}
+body[data-theme="eny"] .hero-copy,body[data-theme="michelle"] .hero-copy,body[data-theme="raquel"] .hero-copy,body[data-theme="bergmann"] .hero-copy{padding-top:26px}
+body[data-theme="eny"] .btn,body[data-theme="michelle"] .btn,body[data-theme="raquel"] .btn,body[data-theme="bergmann"] .btn{color:#fff}
+body[data-theme="eny"] .btn.ghost,body[data-theme="michelle"] .btn.ghost,body[data-theme="raquel"] .btn.ghost,body[data-theme="bergmann"] .btn.ghost{color:var(--ink);border-color:var(--line)}
+@media(min-width:980px){
+  .hero-copy{padding:48px 64px 56px}
+  .sheet,footer{padding-left:64px;padding-right:64px}
+  .grid{grid-template-columns:1.2fr .8fr;align-items:end}
+  body.study .hero{display:grid;grid-template-columns:.86fr 1.14fr;min-height:100svh;align-items:stretch}
+  body.study .media,body.chambers .media{position:relative;height:auto;min-height:100svh}
+  body.chambers .shade,body.chambers .sheen{display:none}
+  body.chambers .btn{color:#fff}
+  body.chambers .btn.ghost,body.study[data-theme="raquel"] .btn.ghost,body.study[data-theme="bergmann"] .btn.ghost{color:var(--ink);border-color:var(--line)}
+  body.study[data-theme="bergmann"] .btn,body.study[data-theme="raquel"] .btn{color:#fff}
+  body.study .media img{animation:pan 22s ease-in-out infinite alternate}
+  body.study .shade{display:block;background:linear-gradient(90deg,transparent 70%,var(--bg) 98%)}
+  body.study .hero-copy{margin:0;display:flex;flex-direction:column;justify-content:flex-end;padding:64px}
+  body.chambers .hero{display:grid;grid-template-columns:1.15fr .85fr;min-height:100svh;align-items:stretch}
+  body.chambers .media{height:auto;min-height:100svh}
+  body.chambers .hero-copy{display:flex;flex-direction:column;justify-content:center;padding:64px}
+}
+@keyframes ken{from{transform:scale(1.04)}to{transform:scale(1.14) translate3d(-1.6%,-1.2%,0)}}
+@keyframes pan{from{object-position:50% 30%}to{object-position:50% 70%}}
+@keyframes sheen{0%,55%{transform:translateX(-130%)}100%{transform:translateX(130%)}}
+@keyframes draw{to{width:76px}}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){
+  .media img,.sheen,.rule,.rise{animation:none}
+  .rule{width:76px}
+}
+.gone{min-height:100vh;display:grid;place-items:center;font-family:var(--sans)}
+</style>
+</head>
+<body class="cinema" data-theme="paloma">
+<header class="hero">
+  <div class="media">
+    <img src="hero.jpg" alt="">
+    <div class="shade"></div>
+    <div class="sheen"></div>
+  </div>
+  <div class="hero-copy">
+    <p class="eyebrow rise">Previdenciário</p>
+    <h1 class="rise d2">Paloma<br>Bernardes</h1>
+    <span class="rule"></span>
+    
+    <p class="lede rise d3">Advocacia previdenciária no Passo d'Areia. O tempo do benefício pede clareza, e o escritório está em Porto Alegre.</p>
+    <ul class="areas"><li>Direito previdenciário</li></ul>
+    <div class="actions rise d4"><a class="btn" href="https://wa.me/5551992970045">WhatsApp</a><a class="btn ghost" href="tel:+5551992970045">Ligar</a></div>
+  </div>
+</header>
+<section class="sheet">
+  <div class="grid">
+    <div><span class="label">Endereço</span><p>Rua Sport Club São José, 71, sala 204<br>Passo d'Areia, Porto Alegre</p></div>
+    <div><span class="label">Telefone</span><a class="phone" href="tel:+5551992970045">(51) 99297-0045</a></div>
+  </div>
+</section>
+<footer>Prévia preparada por Eduardo Rad, Flight Class. Esta página sai do ar em 2 de novembro de 2026.</footer>
+<script>
+if (Date.now() > new Date("2026-11-02T23:59:59-03:00").getTime()) {
+  document.body.innerHTML = '<div class="gone"><p>Esta prévia encerrou.</p></div>';
+}
+</script>
+</body>
+</html>
