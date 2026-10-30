@@ -206,6 +206,21 @@ body[data-theme="eny"] .btn.ghost,body[data-theme="michelle"] .btn.ghost,body[da
 .gone{min-height:100vh;display:grid;place-items:center;font-family:var(--sans)}
 `;
 
+function cardText(firm) {
+  const cards = {
+    paloma: "Advocacia previdenciária. Passo d'Areia, Porto Alegre.",
+    jussara: "Advocacia previdenciária em Porto Alegre.",
+    eny: "Civil, consumidor, família, imobiliário e administrativo.",
+    michelle: "Advocacia e assessoria jurídica. Passo d'Areia.",
+    dilto: "Advocacia no Passo d'Areia, Porto Alegre.",
+    raquel: "Direito do trabalho em Porto Alegre.",
+    taiana: "Advocacia cível em Porto Alegre.",
+    bergmann: "Advocacia em Porto Alegre.",
+    vs: "Imobiliário, cível e inventários em Porto Alegre.",
+  };
+  return cards[firm.slug];
+}
+
 function page(firm) {
   const tel = firm.phone.replace(/\D/g, "");
   const areas = firm.areas.length
@@ -221,7 +236,7 @@ function page(firm) {
 <meta name="robots" content="noindex,nofollow,noarchive">
 <title>${firm.plain}</title>
 <meta property="og:title" content="${firm.plain}">
-<meta property="og:description" content="${firm.lede}">
+<meta property="og:description" content="${cardText(firm)}">
 <meta property="og:image" content="hero.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
